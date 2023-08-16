@@ -39,6 +39,9 @@ dependencies:
   equatable: ^2.0.5
   http: ^0.13.6
   google_fonts: ^4.0.4
+  loading_animation_widget: ^1.2.0+4
+  flutter_native_splash: ^2.3.2
+  font_awesome_flutter: ^10.5.0
 
 dev_dependencies:
   flutter_test:
@@ -50,6 +53,11 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+
+flutter_native_splash:
+  color: "#000000"
+  # background_image: "lib/ui/assets/images/splash.jpg"
+  image: "lib/assets/github-mark-white.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

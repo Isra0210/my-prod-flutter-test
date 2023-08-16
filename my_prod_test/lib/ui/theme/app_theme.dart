@@ -21,7 +21,7 @@ class AppTheme with MPColors, MPTextTheme {
         onError: MPColors.blackColor,
         onBackground: MPColors.bgColorLighter,
         brightness: Brightness.light,
-        outline: MPColors.greyLight,
+        outline: MPColors.outline,
       ),
       scaffoldBackgroundColor: MPColors.bgColorDefault,
       primaryColor: MPColors.primary,

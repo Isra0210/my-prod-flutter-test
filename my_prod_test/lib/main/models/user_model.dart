@@ -6,12 +6,16 @@ class UserModel implements Equatable {
     this.name,
     this.avatarUrl,
     this.bio,
+    this.publicRepos,
+    this.login,
   });
 
   final int? id;
   final String? name;
   final String? avatarUrl;
   final String? bio;
+  final int? publicRepos;
+  final String? login;
 
   @override
   List<Object?> get props => [id, name, avatarUrl, bio];
@@ -19,11 +23,13 @@ class UserModel implements Equatable {
   @override
   bool? get stringify => true;
 
-  factory UserModel.fromMap(Map map) => UserModel(
-        id: map['id'],
-        name: map['name'],
-        avatarUrl: map['avatar_url'],
-        bio: map['createdAt'],
+  factory UserModel.fromJson(Map json) => UserModel(
+        id: json['id'],
+        name: json['name'],
+        avatarUrl: json['avatar_url'],
+        bio: json['bio'],
+        publicRepos: json['public_repos'],
+        login: json['login']
       );
 
   @override
